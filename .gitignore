@@ -1,0 +1,16 @@
+# shared repositories
+repos/*
+!repos/init-bare-repo.sh
+!repos/README.md
+
+# users-sandbox
+sandbox/babs/*
+sandbox/buster/*
+!sandbox/babs/*.sh
+!sandbox/babs/README.md
+!sandbox/buster/*.sh
+!sandbox/buster/README.md
+
+.idea/
+node_modules/
+.DS_Store
