@@ -31,7 +31,7 @@ app.all('/gitsrv/*', (req, res) => {
 
   var dir = path.join(__dirname, `${process.env.GIT_SHARED_REPOSITORIES_LOCATION}/${user}`, repo);
 
-  req.pipe(backend(req.url, function (err, service) {
+  req.pipe(backend(req.url, (err, service) => {
       if (err) return res.end(err + '\n');
 
       res.setHeader('content-type', service.type);
